@@ -9,19 +9,19 @@ import java.awt.Point;
 import java.awt.Toolkit;
 
 import javax.swing.BorderFactory;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JPanel;
 
 import dec.app.buddy.R;
 
-public class Frame extends JFrame {
+public class Frame extends JDialog {
     private static final long serialVersionUID = -7579705443967106928L;
 
     public Frame() {
         setUndecorated(true);
         setOpacity(R.OPACITY);
         setAlwaysOnTop(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         
         // add the root JPanel
         JPanel rootPanel = new JPanel();

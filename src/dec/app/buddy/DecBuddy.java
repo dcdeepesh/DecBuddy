@@ -8,12 +8,12 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 
 import javax.imageio.ImageIO;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 
 import dec.app.buddy.gui.Frame;
 
 public class DecBuddy {
-    private static JFrame frame;
+    private static JDialog frame;
     private static TrayIcon trayIcon;
 
     public static void main(String[] args) throws Exception {
