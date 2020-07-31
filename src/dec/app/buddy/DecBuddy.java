@@ -15,6 +15,8 @@ public class DecBuddy {
     private static TrayIcon trayIcon;
 
     public static void main(String[] args) throws Exception {
+        mainPanel = new MainPanel();
+
         if (!SystemTray.isSupported()) {
             System.err.println("System tray not supported");
             System.exit(1);
@@ -32,11 +34,7 @@ public class DecBuddy {
             }
         });
         trayIcon.setToolTip("DecBuddy");
-
         SystemTray.getSystemTray().add(trayIcon);
-
-        mainPanel = new MainPanel();
-        mainPanel.setVisible(true);
     }
 
     public static void shutdown() {
