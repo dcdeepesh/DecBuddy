@@ -5,7 +5,6 @@ import java.awt.SystemTray;
 import java.awt.TrayIcon;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.File;
 
 import javax.imageio.ImageIO;
 
