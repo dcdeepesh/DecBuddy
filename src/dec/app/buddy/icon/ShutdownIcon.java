@@ -1,10 +1,12 @@
 package dec.app.buddy.icon;
 
+import dec.app.buddy.DecBuddy;
+
 public class ShutdownIcon implements Icon {
 
     @Override
     public void act() {
-        System.out.println("SHUTDOWN SIGNAL");
+        DecBuddy.shutdown();
     }
 
     @Override

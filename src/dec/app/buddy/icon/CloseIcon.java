@@ -1,5 +1,7 @@
 package dec.app.buddy.icon;
 
+import dec.app.buddy.DecBuddy;
+
 public class CloseIcon implements Icon {
 
     @Override
@@ -9,6 +11,6 @@ public class CloseIcon implements Icon {
 
     @Override
     public void act() {
-        System.exit(0);
+        DecBuddy.close();
     }
 }
