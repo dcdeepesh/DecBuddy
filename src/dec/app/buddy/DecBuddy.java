@@ -10,6 +10,8 @@ import java.io.File;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
+import dec.app.buddy.gui.Frame;
+
 public class DecBuddy {
     private static JFrame frame;
     private static TrayIcon trayIcon;

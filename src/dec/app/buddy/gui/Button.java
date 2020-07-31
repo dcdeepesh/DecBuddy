@@ -1,4 +1,4 @@
-package dec.app.buddy;
+package dec.app.buddy.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,6 +12,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
+import dec.app.buddy.R;
 import dec.app.buddy.icon.Icon;
 
 public class Button extends JPanel {  

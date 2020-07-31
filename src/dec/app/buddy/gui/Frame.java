@@ -1,4 +1,4 @@
-package dec.app.buddy;
+package dec.app.buddy.gui;
 
 import java.awt.Dimension;
 import java.awt.GraphicsConfiguration;
@@ -11,6 +11,8 @@ import java.awt.Toolkit;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import dec.app.buddy.R;
 
 public class Frame extends JFrame {
     private static final long serialVersionUID = -7579705443967106928L;
