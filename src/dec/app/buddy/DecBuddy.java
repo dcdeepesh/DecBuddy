@@ -8,12 +8,11 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 
 import javax.imageio.ImageIO;
-import javax.swing.JDialog;
 
-import dec.app.buddy.gui.Frame;
+import dec.app.buddy.gui.MainPanel;
 
 public class DecBuddy {
-    private static JDialog frame;
+    private static MainPanel mainPanel;
     private static TrayIcon trayIcon;
 
     public static void main(String[] args) throws Exception {
@@ -30,23 +29,23 @@ public class DecBuddy {
         trayIcon.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent event) {
-                frame.setVisible(!frame.isVisible());
+                mainPanel.setVisible(!mainPanel.isVisible());
             }
         });
         trayIcon.setToolTip("DecBuddy");
 
         SystemTray.getSystemTray().add(trayIcon);
 
-        frame = new Frame();
-        frame.setVisible(true);
+        mainPanel = new MainPanel();
+        mainPanel.setVisible(true);
     }
 
     public static void shutdown() {
-        frame.dispose();
+        mainPanel.dispose();
         SystemTray.getSystemTray().remove(trayIcon);
     }
 
     public static void close() {
-        frame.setVisible(false);
+        mainPanel.setVisible(false);
     }
 }

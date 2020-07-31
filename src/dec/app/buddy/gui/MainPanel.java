@@ -14,10 +14,10 @@ import javax.swing.JPanel;
 
 import dec.app.buddy.R;
 
-public class Frame extends JDialog {
+public class MainPanel extends JDialog {
     private static final long serialVersionUID = -7579705443967106928L;
 
-    public Frame() {
+    public MainPanel() {
         setUndecorated(true);
         setOpacity(R.OPACITY);
         setAlwaysOnTop(true);
