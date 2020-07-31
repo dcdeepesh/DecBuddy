@@ -23,7 +23,7 @@ public class DecBuddy {
 
         trayIcon = new TrayIcon(
             ImageIO
-                .read(new File("res/decbot-icon.png"))
+                .read(DecBuddy.class.getResourceAsStream("/res/decbot-icon.png"))
                 .getScaledInstance(16, 16, Image.SCALE_SMOOTH)
         );
         trayIcon.addMouseListener(new MouseAdapter(){
